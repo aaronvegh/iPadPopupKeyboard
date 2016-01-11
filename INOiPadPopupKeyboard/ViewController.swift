@@ -13,12 +13,14 @@ class ViewController: UIViewController {
     @IBOutlet var textField:INOKeyboardTextField!
     @IBOutlet var textField2:INOKeyboardTextField!
     @IBOutlet var textField3:INOKeyboardTextField!
+    @IBOutlet var textView:INOKeyboardTextView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.textField.viewController = self
         self.textField2.viewController = self
         self.textField3.viewController = self
+        self.textView.viewController = self
     }
     
     

@@ -75,6 +75,17 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="K44-e6-7kw" customClass="INOKeyboardTextView" customModule="INOiPadPopupKeyboard" customModuleProvider="target">
+                                <rect key="frame" x="20" y="88" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="B2e-AS-bey"/>
+                                    <constraint firstAttribute="height" constant="128" id="BpH-or-cXX"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -88,7 +99,9 @@
                             <constraint firstItem="uzf-FE-X00" firstAttribute="top" secondItem="KLF-O5-Sdc" secondAttribute="bottom" constant="30" id="dP3-4m-hZm"/>
                             <constraint firstItem="ZDV-P4-uvB" firstAttribute="trailing" secondItem="LUP-Sw-pnm" secondAttribute="trailingMargin" id="eo5-bz-y2P"/>
                             <constraint firstItem="Ef4-r4-8TL" firstAttribute="top" secondItem="aqF-QV-DfN" secondAttribute="bottom" constant="9" id="hhU-ZC-IdF"/>
+                            <constraint firstItem="K44-e6-7kw" firstAttribute="top" secondItem="uzf-FE-X00" secondAttribute="bottom" constant="8" id="oVI-p5-GOC"/>
                             <constraint firstItem="ZDV-P4-uvB" firstAttribute="leading" secondItem="LUP-Sw-pnm" secondAttribute="leadingMargin" id="pH1-RP-efi"/>
+                            <constraint firstItem="K44-e6-7kw" firstAttribute="leading" secondItem="LUP-Sw-pnm" secondAttribute="leadingMargin" id="r2B-fb-oNy"/>
                             <constraint firstItem="uzf-FE-X00" firstAttribute="leading" secondItem="LUP-Sw-pnm" secondAttribute="leadingMargin" id="vMm-yW-ubL"/>
                             <constraint firstItem="vq7-5z-1F2" firstAttribute="top" secondItem="Ef4-r4-8TL" secondAttribute="bottom" constant="20" id="yg0-4I-82E"/>
                             <constraint firstItem="uzf-FE-X00" firstAttribute="trailing" secondItem="LUP-Sw-pnm" secondAttribute="trailingMargin" id="yzH-e1-LV6"/>
@@ -104,6 +117,7 @@
                         <outlet property="textField" destination="uzf-FE-X00" id="hho-9k-r0T"/>
                         <outlet property="textField2" destination="ZDV-P4-uvB" id="h0Y-7h-B6P"/>
                         <outlet property="textField3" destination="Ef4-r4-8TL" id="bxz-HY-I35"/>
+                        <outlet property="textView" destination="K44-e6-7kw" id="PH8-rX-cuB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="axS-2l-jcl" userLabel="First Responder" sceneMemberID="firstResponder"/>

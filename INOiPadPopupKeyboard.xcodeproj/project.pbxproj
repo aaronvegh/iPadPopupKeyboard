@@ -17,6 +17,7 @@
 		93350D6B1C41EB210057621C /* INOKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93350D6A1C41EB210057621C /* INOKeyboardViewController.swift */; };
 		93350D6D1C41FC850057621C /* INOKeyboardTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93350D6C1C41FC850057621C /* INOKeyboardTextField.swift */; };
 		93350D6F1C41FEA50057621C /* INOKeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93350D6E1C41FEA50057621C /* INOKeyboardViewController.xib */; };
+		934611901C444B5A006372A6 /* INOKeyboardTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9346118F1C444B5A006372A6 /* INOKeyboardTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		93350D6A1C41EB210057621C /* INOKeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INOKeyboardViewController.swift; sourceTree = "<group>"; };
 		93350D6C1C41FC850057621C /* INOKeyboardTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INOKeyboardTextField.swift; sourceTree = "<group>"; };
 		93350D6E1C41FEA50057621C /* INOKeyboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = INOKeyboardViewController.xib; sourceTree = "<group>"; };
+		9346118F1C444B5A006372A6 /* INOKeyboardTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INOKeyboardTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				93350D6A1C41EB210057621C /* INOKeyboardViewController.swift */,
 				93350D6E1C41FEA50057621C /* INOKeyboardViewController.xib */,
 				93350D661C41E4550057621C /* INOKeyboardButton.swift */,
+				9346118F1C444B5A006372A6 /* INOKeyboardTextView.swift */,
 			);
 			path = INOiPadPopupKeyboard;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				93350D6D1C41FC850057621C /* INOKeyboardTextField.swift in Sources */,
 				93350D491C41E1970057621C /* ViewController.swift in Sources */,
 				93350D671C41E4550057621C /* INOKeyboardButton.swift in Sources */,
+				934611901C444B5A006372A6 /* INOKeyboardTextView.swift in Sources */,
 				93350D6B1C41EB210057621C /* INOKeyboardViewController.swift in Sources */,
 				93350D471C41E1970057621C /* AppDelegate.swift in Sources */,
 			);

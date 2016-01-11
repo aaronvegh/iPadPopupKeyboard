@@ -1,19 +1,18 @@
 //
-//  INOKeyboardTextField.swift
+//  INOKeyboardTextView.swift
 //  INOiPadPopupKeyboard
 //
-//  Created by Aaron Vegh on 2016-01-09.
+//  Created by Aaron Vegh on 2016-01-11.
 //  Copyright © 2016 Aaron Vegh. All rights reserved.
 //
 
 import UIKit
 
-class INOKeyboardTextField: UITextField, UITextFieldDelegate, UIPopoverPresentationControllerDelegate {
-    
-    var activationBlock:((textField:INOKeyboardTextField) -> ())?
+class INOKeyboardTextView: UITextView, UITextViewDelegate, UIPopoverPresentationControllerDelegate {
+    var activationBlock:((textView:INOKeyboardTextView) -> ())?
     var viewController:UIViewController? {
         didSet {
-            self.activationBlock = { (textField:INOKeyboardTextField) -> () in
+            self.activationBlock = { (textView:INOKeyboardTextView) -> () in
                 if let keyboardVC = NSBundle.mainBundle().loadNibNamed("INOKeyboardViewController", owner: self, options: nil).first as? INOKeyboardViewController {
                     keyboardVC.modalPresentationStyle = .Popover
                     keyboardVC.preferredContentSize = CGSize(width: 450, height: 240)
@@ -53,7 +52,7 @@ class INOKeyboardTextField: UITextField, UITextFieldDelegate, UIPopoverPresentat
         if !self.isFirstResponder() {
             super.becomeFirstResponder()
             if let block = self.activationBlock {
-                block(textField: self)
+                block(textView: self)
             }
         }
         return true
