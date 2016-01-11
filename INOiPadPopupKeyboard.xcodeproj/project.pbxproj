@@ -13,6 +13,11 @@
 		93350D4E1C41E1970057621C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93350D4D1C41E1970057621C /* Assets.xcassets */; };
 		93350D511C41E1970057621C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93350D4F1C41E1970057621C /* LaunchScreen.storyboard */; };
 		93350D5C1C41E1970057621C /* INOiPadPopupKeyboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93350D5B1C41E1970057621C /* INOiPadPopupKeyboardUITests.swift */; };
+		93350D671C41E4550057621C /* INOKeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93350D661C41E4550057621C /* INOKeyboardButton.swift */; };
+		93350D691C41EAE80057621C /* INOKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93350D681C41EAE80057621C /* INOKeyboardView.xib */; };
+		93350D6B1C41EB210057621C /* INOKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93350D6A1C41EB210057621C /* INOKeyboardViewController.swift */; };
+		93350D6D1C41FC850057621C /* INOKeyboardTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93350D6C1C41FC850057621C /* INOKeyboardTextField.swift */; };
+		93350D6F1C41FEA50057621C /* INOKeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93350D6E1C41FEA50057621C /* INOKeyboardViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		93350D571C41E1970057621C /* INOiPadPopupKeyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = INOiPadPopupKeyboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93350D5B1C41E1970057621C /* INOiPadPopupKeyboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INOiPadPopupKeyboardUITests.swift; sourceTree = "<group>"; };
 		93350D5D1C41E1970057621C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93350D661C41E4550057621C /* INOKeyboardButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INOKeyboardButton.swift; sourceTree = "<group>"; };
+		93350D681C41EAE80057621C /* INOKeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = INOKeyboardView.xib; sourceTree = "<group>"; };
+		93350D6A1C41EB210057621C /* INOKeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INOKeyboardViewController.swift; sourceTree = "<group>"; };
+		93350D6C1C41FC850057621C /* INOKeyboardTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INOKeyboardTextField.swift; sourceTree = "<group>"; };
+		93350D6E1C41FEA50057621C /* INOKeyboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = INOKeyboardViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +93,11 @@
 				93350D4D1C41E1970057621C /* Assets.xcassets */,
 				93350D4F1C41E1970057621C /* LaunchScreen.storyboard */,
 				93350D521C41E1970057621C /* Info.plist */,
+				93350D6A1C41EB210057621C /* INOKeyboardViewController.swift */,
+				93350D6E1C41FEA50057621C /* INOKeyboardViewController.xib */,
+				93350D661C41E4550057621C /* INOKeyboardButton.swift */,
+				93350D681C41EAE80057621C /* INOKeyboardView.xib */,
+				93350D6C1C41FC850057621C /* INOKeyboardTextField.swift */,
 			);
 			path = INOiPadPopupKeyboard;
 			sourceTree = "<group>";
@@ -146,6 +161,7 @@
 				TargetAttributes = {
 					93350D421C41E1970057621C = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 9P5W2L6F6B;
 					};
 					93350D561C41E1970057621C = {
 						CreatedOnToolsVersion = 7.2;
@@ -177,8 +193,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93350D6F1C41FEA50057621C /* INOKeyboardViewController.xib in Resources */,
 				93350D511C41E1970057621C /* LaunchScreen.storyboard in Resources */,
 				93350D4E1C41E1970057621C /* Assets.xcassets in Resources */,
+				93350D691C41EAE80057621C /* INOKeyboardView.xib in Resources */,
 				93350D4C1C41E1970057621C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,7 +215,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93350D6D1C41FC850057621C /* INOKeyboardTextField.swift in Sources */,
 				93350D491C41E1970057621C /* ViewController.swift in Sources */,
+				93350D671C41E4550057621C /* INOKeyboardButton.swift in Sources */,
+				93350D6B1C41EB210057621C /* INOKeyboardViewController.swift in Sources */,
 				93350D471C41E1970057621C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,10 +348,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = INOiPadPopupKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.innoveghtive.INOiPadPopupKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -338,10 +362,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = INOiPadPopupKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.innoveghtive.INOiPadPopupKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
