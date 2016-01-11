@@ -38,21 +38,16 @@
                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mGK-HO-Wun" customClass="INOKeyboardButton" customModule="INOiPadPopupKeyboard" customModuleProvider="target">
                         <rect key="frame" x="6" y="144" width="35" height="40"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="^" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzp-fL-4kQ">
-                                <rect key="frame" x="0.0" y="0.0" width="35" height="38"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shift-up" translatesAutoresizingMaskIntoConstraints="NO" id="0fb-io-XQa">
+                                <rect key="frame" x="2" y="5" width="30" height="30"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.64582453549999996" colorSpace="calibratedRGB"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="string" keyPath="primeValue" value="^"/>
-                            <userDefinedRuntimeAttribute type="string" keyPath="shiftedValue" value="Shift"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="shiftedValue" value="^"/>
                         </userDefinedRuntimeAttributes>
-                        <connections>
-                            <outlet property="keyCapField" destination="wzp-fL-4kQ" id="0lQ-FF-rrv"/>
-                        </connections>
                     </view>
                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FKp-3H-cZb" customClass="INOKeyboardButton" customModule="INOiPadPopupKeyboard" customModuleProvider="target">
                         <rect key="frame" x="49" y="8" width="30" height="40"/>
@@ -236,6 +231,7 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.64582453549999996" colorSpace="calibratedRGB"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="string" keyPath="primeValue" value="Backspace"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="shiftedValue" value="Backspace"/>
                         </userDefinedRuntimeAttributes>
                     </view>
                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H0i-52-gEd" customClass="INOKeyboardButton" customModule="INOiPadPopupKeyboard" customModuleProvider="target">
@@ -894,5 +890,6 @@
     </objects>
     <resources>
         <image name="backspace" width="32" height="32"/>
+        <image name="shift-up" width="48" height="48"/>
     </resources>
 </document>

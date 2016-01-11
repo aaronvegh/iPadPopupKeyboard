@@ -26,16 +26,78 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FirstName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGR-eh-h4O">
+                                <rect key="frame" x="20" y="20" width="194" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="194" id="LNo-jz-cjA"/>
+                                    <constraint firstAttribute="height" constant="21" id="aTU-gm-JkS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ef4-r4-8TL" customClass="INOKeyboardTextField" customModule="INOiPadPopupKeyboard" customModuleProvider="target">
+                                <rect key="frame" x="20" y="550" width="560" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Pen-Dh-OLf"/>
+                                    <constraint firstAttribute="height" constant="30" id="mmV-Me-Ohg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright notice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqF-QV-DfN">
+                                <rect key="frame" x="20" y="520" width="194" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="194" id="F4Z-99-0n5"/>
+                                    <constraint firstAttribute="height" constant="21" id="J9k-zb-6A8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZDV-P4-uvB" customClass="INOKeyboardTextField" customModule="INOiPadPopupKeyboard" customModuleProvider="target">
+                                <rect key="frame" x="20" y="285" width="560" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="c6m-TS-hQw"/>
+                                    <constraint firstAttribute="height" constant="30" id="fXI-46-lAc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something in the middle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlQ-ls-hUg">
+                                <rect key="frame" x="20" y="256" width="194" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="194" id="Yam-1f-ncf"/>
+                                    <constraint firstAttribute="height" constant="21" id="s7q-Bd-zmy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Ef4-r4-8TL" firstAttribute="leading" secondItem="LUP-Sw-pnm" secondAttribute="leadingMargin" id="8he-J4-1GC"/>
+                            <constraint firstItem="aqF-QV-DfN" firstAttribute="leading" secondItem="LUP-Sw-pnm" secondAttribute="leadingMargin" id="Ec9-sJ-xbB"/>
+                            <constraint firstItem="ZGR-eh-h4O" firstAttribute="leading" secondItem="LUP-Sw-pnm" secondAttribute="leadingMargin" id="Faz-oC-I5n"/>
+                            <constraint firstItem="ZGR-eh-h4O" firstAttribute="top" secondItem="KLF-O5-Sdc" secondAttribute="bottom" id="HVn-es-Nxc"/>
+                            <constraint firstItem="ZDV-P4-uvB" firstAttribute="top" secondItem="tlQ-ls-hUg" secondAttribute="bottom" constant="8" id="ISQ-oK-H3D"/>
+                            <constraint firstItem="tlQ-ls-hUg" firstAttribute="leading" secondItem="LUP-Sw-pnm" secondAttribute="leadingMargin" id="KEk-P7-v4Y"/>
+                            <constraint firstItem="ZDV-P4-uvB" firstAttribute="centerY" secondItem="LUP-Sw-pnm" secondAttribute="centerY" id="Y4s-m2-6WG"/>
                             <constraint firstItem="uzf-FE-X00" firstAttribute="top" secondItem="KLF-O5-Sdc" secondAttribute="bottom" constant="30" id="dP3-4m-hZm"/>
+                            <constraint firstItem="ZDV-P4-uvB" firstAttribute="trailing" secondItem="LUP-Sw-pnm" secondAttribute="trailingMargin" id="eo5-bz-y2P"/>
+                            <constraint firstItem="Ef4-r4-8TL" firstAttribute="top" secondItem="aqF-QV-DfN" secondAttribute="bottom" constant="9" id="hhU-ZC-IdF"/>
+                            <constraint firstItem="ZDV-P4-uvB" firstAttribute="leading" secondItem="LUP-Sw-pnm" secondAttribute="leadingMargin" id="pH1-RP-efi"/>
                             <constraint firstItem="uzf-FE-X00" firstAttribute="leading" secondItem="LUP-Sw-pnm" secondAttribute="leadingMargin" id="vMm-yW-ubL"/>
+                            <constraint firstItem="vq7-5z-1F2" firstAttribute="top" secondItem="Ef4-r4-8TL" secondAttribute="bottom" constant="20" id="yg0-4I-82E"/>
                             <constraint firstItem="uzf-FE-X00" firstAttribute="trailing" secondItem="LUP-Sw-pnm" secondAttribute="trailingMargin" id="yzH-e1-LV6"/>
+                            <constraint firstItem="Ef4-r4-8TL" firstAttribute="trailing" secondItem="LUP-Sw-pnm" secondAttribute="trailingMargin" id="zVd-2X-ltO"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="textField" destination="uzf-FE-X00" id="hho-9k-r0T"/>
+                        <outlet property="textField2" destination="ZDV-P4-uvB" id="h0Y-7h-B6P"/>
+                        <outlet property="textField3" destination="Ef4-r4-8TL" id="bxz-HY-I35"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="axS-2l-jcl" userLabel="First Responder" sceneMemberID="firstResponder"/>

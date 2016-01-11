@@ -10,6 +10,9 @@ import UIKit
 
 class INOKeyboardButton:UIControl {
     
+    let primeColour:UIColor = UIColor(white: 0, alpha: 0.65)
+    let pressedColour:UIColor = UIColor(white: 0, alpha: 0.35)
+    
     var buttonTappedHandler:((value:String) -> ())?
     
     var isShifted:Bool = false {
@@ -26,23 +29,28 @@ class INOKeyboardButton:UIControl {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.layer.cornerRadius = 4
-        self.addTarget(self, action: "tappedButton:", forControlEvents: .TouchUpInside)
+        self.addTarget(self, action: "tappedButton:", forControlEvents: .TouchDown)
+        self.addTarget(self, action: "releasedButton:", forControlEvents: .TouchUpInside)
     }
     
     func drawKeycaps() {
         if self.isShifted == false {
             self.keyCapField?.text = self.primeValue
             self.accessibilityLabel = self.primeValue
+            self.backgroundColor = self.primeColour
         }
         else {
             self.keyCapField?.text = self.shiftedValue
             self.accessibilityLabel = self.shiftedValue
+            if self.primeValue == "^" {
+                self.backgroundColor = self.pressedColour
+            }
         }
     }
     
-    
     func tappedButton(sender:INOKeyboardButton) {
-
+        sender.backgroundColor = self.pressedColour
+        print("pressed")
         if let handler = self.buttonTappedHandler {
             if self.isShifted == false {
                 handler(value: self.primeValue!)
@@ -55,6 +63,15 @@ class INOKeyboardButton:UIControl {
 
     }
     
+    func releasedButton(sender:INOKeyboardButton) {
+        print("released")
+        if self.primeValue == "^" {
+            sender.backgroundColor = self.pressedColour
+        }
+        else {
+            sender.backgroundColor = self.primeColour
+        }
+    }
     
     
     

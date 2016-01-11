@@ -19,13 +19,14 @@ class INOKeyboardViewController:UIViewController {
         for button in self.buttonCollection {
             button.buttonTappedHandler = { (value:String) in
                 if value == "^" {
-                    let _ = self.buttonCollection.map({$0.isShifted = true})
+                    let _ = self.buttonCollection.map({$0.isShifted = !$0.isShifted})
                 }
                 else if value == "Backspace" {
-                    
+                    if let textBlock = self.textEnteredBlock {
+                        textBlock(value:value)
+                    }
                 }
                 else {
-                    print("Value: \(value)")
                     let _ = self.buttonCollection.map({$0.isShifted = false})
                     if let textBlock = self.textEnteredBlock {
                         textBlock(value:value)
@@ -35,5 +36,7 @@ class INOKeyboardViewController:UIViewController {
             
         }
     }
+    
+
     
 }
