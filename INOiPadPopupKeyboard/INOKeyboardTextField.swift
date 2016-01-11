@@ -30,11 +30,11 @@ class INOKeyboardTextField: UITextField, UITextFieldDelegate, UIPopoverPresentat
                     
                     let presentationController = keyboardVC.popoverPresentationController
                     presentationController?.delegate = self
-                    presentationController?.backgroundColor = UIColor.whiteColor()
+                    presentationController?.backgroundColor = UIColor(hue:0, saturation:0, brightness:0.855, alpha:1)
                     presentationController?.permittedArrowDirections = [.Any]
                     presentationController?.passthroughViews = [self]
                     presentationController?.sourceView = self
-                    presentationController?.sourceRect = self.frame
+                    presentationController?.sourceRect = self.bounds
                 }
             }
         }

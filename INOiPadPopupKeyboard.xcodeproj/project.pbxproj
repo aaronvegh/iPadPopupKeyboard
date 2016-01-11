@@ -44,7 +44,6 @@
 		93350D6A1C41EB210057621C /* INOKeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INOKeyboardViewController.swift; sourceTree = "<group>"; };
 		93350D6C1C41FC850057621C /* INOKeyboardTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INOKeyboardTextField.swift; sourceTree = "<group>"; };
 		93350D6E1C41FEA50057621C /* INOKeyboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = INOKeyboardViewController.xib; sourceTree = "<group>"; };
-		934611841C4406BE006372A6 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,11 +91,10 @@
 				93350D4D1C41E1970057621C /* Assets.xcassets */,
 				93350D4F1C41E1970057621C /* LaunchScreen.storyboard */,
 				93350D521C41E1970057621C /* Info.plist */,
+				93350D6C1C41FC850057621C /* INOKeyboardTextField.swift */,
 				93350D6A1C41EB210057621C /* INOKeyboardViewController.swift */,
 				93350D6E1C41FEA50057621C /* INOKeyboardViewController.xib */,
 				93350D661C41E4550057621C /* INOKeyboardButton.swift */,
-				93350D6C1C41FC850057621C /* INOKeyboardTextField.swift */,
-				934611841C4406BE006372A6 /* Reveal.framework */,
 			);
 			path = INOiPadPopupKeyboard;
 			sourceTree = "<group>";
@@ -351,16 +349,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/INOiPadPopupKeyboard",
-					"\"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries\"",
 				);
 				INFOPLIST_FILE = INOiPadPopupKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lz",
-					"-framework",
-					Reveal,
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.innoveghtive.INOiPadPopupKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

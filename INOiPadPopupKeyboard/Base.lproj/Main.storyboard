@@ -56,10 +56,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZDV-P4-uvB" customClass="INOKeyboardTextField" customModule="INOiPadPopupKeyboard" customModuleProvider="target">
-                                <rect key="frame" x="20" y="285" width="560" height="30"/>
+                                <rect key="frame" x="20" y="285" width="194" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="c6m-TS-hQw"/>
                                     <constraint firstAttribute="height" constant="30" id="fXI-46-lAc"/>
+                                    <constraint firstAttribute="width" constant="194" id="rzo-jM-vCU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -93,6 +94,11 @@
                             <constraint firstItem="uzf-FE-X00" firstAttribute="trailing" secondItem="LUP-Sw-pnm" secondAttribute="trailingMargin" id="yzH-e1-LV6"/>
                             <constraint firstItem="Ef4-r4-8TL" firstAttribute="trailing" secondItem="LUP-Sw-pnm" secondAttribute="trailingMargin" id="zVd-2X-ltO"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="eo5-bz-y2P"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="textField" destination="uzf-FE-X00" id="hho-9k-r0T"/>

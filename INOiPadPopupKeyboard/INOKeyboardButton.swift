@@ -37,7 +37,10 @@ class INOKeyboardButton:UIControl {
         if self.isShifted == false {
             self.keyCapField?.text = self.primeValue
             self.accessibilityLabel = self.primeValue
-            self.backgroundColor = self.primeColour
+            if self.primeValue == "^" {
+                self.backgroundColor = self.primeColour
+            }
+
         }
         else {
             self.keyCapField?.text = self.shiftedValue
@@ -49,8 +52,8 @@ class INOKeyboardButton:UIControl {
     }
     
     func tappedButton(sender:INOKeyboardButton) {
+        
         sender.backgroundColor = self.pressedColour
-        print("pressed")
         if let handler = self.buttonTappedHandler {
             if self.isShifted == false {
                 handler(value: self.primeValue!)
@@ -64,7 +67,6 @@ class INOKeyboardButton:UIControl {
     }
     
     func releasedButton(sender:INOKeyboardButton) {
-        print("released")
         if self.primeValue == "^" {
             sender.backgroundColor = self.pressedColour
         }
